@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- 날짜 숫자 -->
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textColor="#222222"
+        android:textSize="14sp" />
+
+    <!-- 데이터 표시 영역 (지식 등록/학습 횟수) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <!-- 지식 등록 수 (파란 점) -->
+        <View
+            android:id="@+id/view_dot_add"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/dot_blue"
+            android:visibility="gone" />
+
+        <!-- 학습 횟수 (주황 점) -->
+        <View
+            android:id="@+id/view_dot_learn"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/dot_orange"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_count_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2/1"
+        android:textSize="8sp"
+        android:textColor="#888888"
+        android:visibility="visible"/>
+
+</LinearLayout>

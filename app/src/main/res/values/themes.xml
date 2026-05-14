@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- 선택된 아이템은 파란색, 나머지는 회색으로 표시 -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 하단바 선택 시 강조 색상을 지정하고 싶다면 아래 항목 추가 -->
+        <item name="colorPrimary">#1A73E8</item>
+    </style>
+
+</resources>
